@@ -1,6 +1,6 @@
 {
   "name": "SLINK",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "短连接平台",
   "private": true,
   "egg": {
@@ -19,7 +19,8 @@
     "ci": "npm run lint && npm run cov && npm run tsc",
     "autod": "autod",
     "lint": "eslint . --ext .ts",
-    "clean": "ets clean"
+    "clean": "ets clean",
+    "changelog": "standard-version"
   },
   "dependencies": {
     "csprng": "^0.1.2",
