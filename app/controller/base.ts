@@ -31,6 +31,7 @@ export default class BaseController extends Controller {
     }
 
     public requestValidate(rules) {
-
+        this.ctx.validate(rules)
+        return
     }
 }

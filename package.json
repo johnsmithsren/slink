@@ -1,5 +1,5 @@
 {
-  "name": "SLINK",
+  "name": "slink",
   "version": "0.0.2",
   "description": "短连接平台",
   "private": true,
@@ -30,6 +30,7 @@
     "egg-mongoose": "^3.3.1",
     "egg-redis": "^2.4.0",
     "egg-scripts": "^2.15.2",
+    "egg-validate": "^2.0.2",
     "sha1": "^1.1.1",
     "uuid": "^8.3.2"
   },
@@ -39,15 +40,15 @@
     "@types/supertest": "^2.0.11",
     "autod": "^3.1.2",
     "autod-egg": "^1.1.0",
+    "cz-conventional-changelog": "^3.3.0",
     "egg-bin": "^4.17.0",
     "egg-ci": "^1.19.0",
     "egg-mock": "^4.2.0",
     "eslint": "^8.7.0",
     "eslint-config-egg": "^10.0.0",
+    "standard-version": "^9.3.2",
     "tslib": "^2.3.1",
-    "typescript": "^3.0.0",
-    "cz-conventional-changelog": "^3.3.0",
-    "standard-version": "^9.3.2"
+    "typescript": "^3.0.0"
   },
   "engines": {
     "node": ">=8.9.0"

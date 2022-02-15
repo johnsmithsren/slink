@@ -1,9 +1,16 @@
 import BaseService from "../Base";
+const rand = require('csprng');
+const sha1 = require('sha1');
 // import { ErrorStatus } from "../../middleware/errorStatus";
 export default class User extends BaseService {
     public async create(info) {
-        await this.ctx.model.User.insertMany([info])
-        return
+        const salt = rand(160, 36);
+        info = Object.assign(info, {
+            activated: 1,
+            password: sha1(info.password + salt),
+            salt,
+        });
+        return await this.ctx.model.User.insertMany([info])
     }
 
     public async findOne(condition) {

@@ -1,8 +1,9 @@
 'use strict';
 
 exports.schedule = {
-    interval: '10m',
+    interval: '1000m',
     type: 'all',
+    disbale: true
 };
 
 exports.task = async function (ctx) {

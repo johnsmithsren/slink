@@ -61,6 +61,9 @@ export default (appInfo: EggAppInfo) => {
       poolSize: 40
     },
   }
+  config.security = {
+    csrf: { enable: false }
+  }
   const redisConfig = {
     client: {
       port: 6380,          // Redis port
